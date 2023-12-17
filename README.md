@@ -41,6 +41,16 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 
+## Usage and Implementation Details
+
+The following points are taken into consideration while working on this project:
+
+- Focus on responsive design to match the provided UI samples for various screen sizes and devices.
+- Pay attention to user experience and accessibility features to create an intuitive interface.
+- Maintain code modularity by organizing components, pages, and utility functions efficiently.
+- Follow consistent naming conventions and adhere to best practices for React.js development.
+
+
 ## Built With
 **React:**  A JavaScript library for building user interfaces.
 
