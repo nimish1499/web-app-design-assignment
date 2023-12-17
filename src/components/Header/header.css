@@ -1,0 +1,106 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .logo-text {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    /* transition: transform 0.3s ease-in-out; */
+    font-size: 16px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .sign-up-btn {
+    padding: 0.8rem 1rem;
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+  .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+  
+  @media (max-width: 768px) {
+    .navigation {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 60%;
+      background: black;
+      flex-direction: column;
+      justify-content: start;
+      padding: 2rem;
+      transform: translateX(100%);
+    }
+  
+    .navigation.visible {
+      transform: translateX(0);
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-link, .sign-up-btn {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header{
+      padding: 1rem;
+    }
+  }
+    
+   

@@ -1,0 +1,195 @@
+
+.imageContainer{
+padding-top: 3rem;
+}
+.text{
+
+  color: #fff;
+  text-align: center;
+  padding: 4rem;
+}
+
+.featuresContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* padding: 20px; */
+    background-color: #0c1014;
+    color: white;
+    gap: 20px;
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+  }
+  
+  .featureImage {
+    margin-bottom: 10px;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .featureTitle {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .featureDescription {
+    text-align: center;
+    font-size: 0.9em;
+    color: #5f6873;
+    width: 70%;
+  }
+  .buttonDiv{
+    display: flex;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  /* For medium screens, show 2 columns */
+  @media (min-width: 600px) {
+    .feature {
+      flex-basis: calc(50% - 40px); /* Subtracting the total gap space */
+    }
+  }
+  
+  /* For large screens, show all in a row */
+  @media (min-width: 1024px) {
+    .feature {
+      flex-basis: calc(33.333% - 40px); /* Three features, subtracting the total gap space */
+    }
+  }
+  
+  .sectionContainer1, .sectionContainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c1014;
+    color: white;
+    gap: 20px;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .leftColumn,
+  .rightColumn {
+    width: 100%;
+  }
+  
+  .sectionImage {
+    width: 100%;
+    max-width: 90vw; /* Adjust this to fit your design */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .buutonDiv{
+    justify-content: space-around;
+  }
+  .buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem !important;
+    margin: 2rem;
+    
+  }
+  .buttonLight {
+    padding: 0.8rem 1rem;
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 150px;
+  }
+  .buttonDark {
+    padding: 0.8rem 1rem;
+    border: 1px solid #fff;
+    background: transparent;
+    color: white;
+    min-width: 150px;
+    cursor: pointer;
+    border-radius: 2rem;
+    font-size: 14px;
+    /* margin-left: 1rem; */
+    font-weight: bold;
+  }
+  .buttonBlue {
+    padding: 0.8rem 1rem;
+    background: #2a92fe;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    font-size: 14px;
+    margin-right: 1rem;
+    font-weight: bold;
+    min-width: 150px;
+  }
+  
+  /* .button:hover {
+    background-color: #003d99;
+  } */
+  
+  /* For larger screens, display side by side */
+  @media (min-width: 768px) {
+    .sectionContainer1, .sectionContainer2 {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .leftColumn,
+    .rightColumn {
+      width: 35%;
+    }
+    .bigLeftColumn, .bigRightColumn{
+      width: 40%;
+    }
+    
+  
+    .button {
+      width: auto; /* Adjust button width as needed */
+    }
+  }
+  /* For Smaller Device */
+  @media (max-width: 768px) {
+    .text{
+      padding: 4rem 0rem;
+    }
+    .featureDescription{
+      width: auto;
+    }
+    .imageContainer{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .sectionContainer1 {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .buttonContainer{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem !important;
+      margin: 2rem;
+    }
+    .buttonDark{
+      margin-left: 0;
+    }
+    .sectionImage {
+      width: 80%;
+      max-width: 90vw; /* Adjust this to fit your design */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+  
