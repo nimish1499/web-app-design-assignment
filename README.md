@@ -1,21 +1,27 @@
 
 
-# Todo Application
+# React Custom Video Player App
 
-This project is a React.js application designed to meet specific UI requirements for both web and mobile views. Please refer to the Web-View and Mobile-View images in the folder to understand the design specifications.
+AVideo Player application using React.jsallow users to play videos from a playlist. The app supporta features like seeking, timer, autoplay, and speed selector. Additionally, users can reorder the playlist.
 
-## Objective
 
-The main objectives of this project are:
+## Features
 
-- Implement a responsive UI that accurately reflects the provided design samples for both web and mobile views.
-- Prioritize user experience and accessibility while ensuring code modularity for accommodating future requirements with minimal changes.
-- Maintain a well-organized file hierarchy and adhere to best practices for naming conventions within the application's source code.
+- Play/Pause functionality
+- Seek bar to jump to different times in the video
+- Display of current playback time and total video duration
+- Autoplay current and next video (By default on mute due to browser support)
+- Playback speed adjustment
+- Fullscreen mode
+- Volume control
+- Playlist with draggable video items for reordering
+- Responsive design for mobile and desktop views
+- Video timeline navigation with keys 
 
 
 ## Deployment:
 
-The live version of this project can be viewed [here](https://nimish-website-desgn.netlify.app/).
+The live version of this project can be viewed [here](https://custom-video-player-dnd.netlify.app/).
 
 
 ## Getting Started
